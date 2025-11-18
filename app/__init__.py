@@ -13,6 +13,7 @@ FLASK_SESSION_KEY = os.getenv("FLASK_SESSION_KEY")
 TELNYX_API_KEY = os.getenv("TELNYX_API_KEY")
 TELNYX_NUMBER = os.getenv("TELNYX_NUMBER")
 REDIS_URL = os.getenv("REDIS_URL")
+MESSAGE = os.getenv("MESSAGE")
 
 db = SQLAlchemy()
 

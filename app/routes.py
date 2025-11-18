@@ -1,7 +1,7 @@
 import logging
 from flask import Blueprint, request, jsonify
 from app import db, Contact
-from app.__init__ import TELNYX_API_KEY, TELNYX_NUMBER
+from app.__init__ import TELNYX_API_KEY, TELNYX_NUMBER, MESSAGE
 import requests
 from datetime import datetime
 
@@ -53,7 +53,7 @@ def send_sms(to, message):
         "to": to,
         "text": (
             f"🆘 {timestamp} \n" 
-            f"INDIQUER VOTRE MESSAGE ICI"
+            f"{MESSAGE}"
         )
     }
 
