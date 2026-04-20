@@ -8,3 +8,4 @@ telnyx
 python-dotenv
 phonenumbers
 requests
+cryptography
